@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
-import { rootReducer } from "./reducers/rootReducer";
+import rootReducer from "./reducers/rootReducer";
 
 const inititalState = {};
 
@@ -8,8 +8,9 @@ const store = createStore(
   rootReducer,
   inititalState,
   compose(
-    applyMiddleware(thunk)
-    // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    applyMiddleware(thunk),
+    // eslint-disable-next-line no-underscore-dangle
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   )
 );
 

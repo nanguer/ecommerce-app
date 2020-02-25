@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "t-shirt",
+      "colors": ["red", "blue", "white"],
+      "sizes": ["s", "m", "l"]
+    },
+    {
+      "id": 2,
+      "name": "jeans",
+      "colors": ["black", "blue", "denim"],
+      "sizes": ["s", "m", "l", "xl"]
+    },
+    {
+      "id": 3,
+      "name": "jacket",
+      "colors": ["brown", "black", "grey"],
+      "sizes": ["s", "m", "l"]
+    },
+    {
+      "id": 4,
+      "name": "shirt",
+      "colors": ["grey", "blue", "white", "light blue"],
+      "sizes": ["s", "m", "l", "xl", "xxl"]
+    }
+  ]
+}
